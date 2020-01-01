@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-field": "vant-weapp/field/",
+    "van-rate": "vant-weapp/rate/",
+    "van-button": "vant-weapp/button"
+  },
+  "navigationBarBackgroundColor": "#9ae95b",
+  "navigationBarTitleText": "电影详情页",
+  "navigationBarTextStyle": "white"
+}

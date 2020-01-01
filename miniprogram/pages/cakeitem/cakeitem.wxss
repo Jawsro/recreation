@@ -1,0 +1,141 @@
+.main{
+  border-bottom: 1px solid #ccc;
+}
+swiper{
+  width: 96%;
+  height:400rpx;
+  margin: 0 2% 20rpx;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+.title{
+  color: #684029;
+  font-size: 40rpx;
+  padding-left:10rpx; 
+}
+.content{
+  color: #684029;
+  font-size: 25rpx;
+  padding-left:10rpx; 
+}
+.sizetitle{
+  font-size: 30rpx;
+  padding-left:10rpx; 
+  color: #684029;
+  margin: 20rpx 0;
+}
+.size{
+  font-size: 25rpx;
+  overflow: hidden;
+}
+.size-item{
+  color: #684029;
+  width:100rpx;
+  line-height: 60rpx;
+  float: left;
+  border: 1rpx solid #ccc;
+  margin-left: 20rpx;
+  text-align: center;
+  margin-bottom: 25rpx;
+}
+.bigimg{
+  width: 90%;
+  height: auto;
+  margin: 10rpx auto;
+}
+.imgs{
+  margin-bottom: 110rpx;
+}
+.bigimgitem{
+  width: 100%;
+}
+.assess{
+  border: 1rpx solid #ccc;
+  padding: 10rpx;
+  margin: 0 10rpx
+}
+.d-img{
+  width: 200rpx;
+  height: 150rpx;
+  margin:10rpx 30rpx 0 10rpx;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.displaynoneImage text{
+  color: red;
+  font-weight: 600
+}
+.price{
+  font-size: 50rpx
+}
+.number{
+  overflow: hidden
+}
+.num{
+  
+  float: right;
+  overflow: hidden;
+  margin-bottom: 50rpx;
+  margin-right: 40rpx
+}
+.num view{
+  float: left;
+  border: 1rpx solid #ccc;
+  font-size: 30rpx
+}
+.num view button{
+  width:46rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  text-align: center;
+  padding: 0
+}
+.input{
+  line-height: 46rpx;
+  text-align: center;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  
+}
+.num view input{
+  height: 46rpx;
+  width:80rpx;
+}
+.btn{
+  border-radius:8px;
+  text-align: center;
+  background: #f44;
+  border: 1px solid #f44;
+  color: #fff;
+  font-size: 35rpx;
+  margin-bottom: 30rpx;
+}
+page{
+  position: relative;
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000;
+  opacity: .3;
+}
+.displaynone{
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+  /* bottom: 100rpx; */
+  bottom:0
+}
+.close{
+  font-size: 60rpx;
+  color: #ccc;
+  position: absolute;
+  top:6rpx;
+  right: 25rpx;
+}

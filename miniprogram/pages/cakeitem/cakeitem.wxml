@@ -1,0 +1,84 @@
+<!--pages/cakeitem/cakeitem.wxml-->
+<!-- 商品详情页-->
+<view wx:for="{{allcakeitem}}" wx:key="{{index}}" class="main">
+<!--  图片轮播 -->
+  <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{item.image}}" wx:key="{{index}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+        </swiper-item>
+      </block>
+  </swiper>
+  <!-- 商品详情-->
+  <!-- 商品标题-->
+  <view class="title">{{item.name}}</view>
+  <!-- 商品内容-->
+  <view class="content">{{item.content}}</view>
+  <!-- 商品规格-->
+  <view class="sizetitle">规格：</view>
+  <view  class="size">
+    <view class="size-item" wx:for="{{item.size}}" wx:key="{{index}}">{{item}}</view>
+  </view>
+  <!-- 商品评价-->
+  <view class="sizetitle">商品评价：</view>
+  <view class=" assess content">暂无评价</view>
+  <!-- 商品大图-->
+  <view class="sizetitle">商品详情：</view>
+  <view class="imgs">
+    <view class="bigimg" wx:for="{{item.bigImg}}" wx:key="{{index}}">
+    <image src="{{item}}" class="bigimgitem"></image>
+  </view>
+  </view>
+  
+</view>
+<view class="displaynone" wx:if="{{show}}" wx:for="{{allcakeitem}}" wx:key="{{index}}">
+      <view class="close" bindtap="close">X</view>
+      <view class="displaynoneImage" >
+        <image src="{{item.image[0]}}" class="d-img"></image>
+        <text>￥</text><text class="price">{{item.price}}</text>
+      </view>
+
+      <view class="sizetitle">规格</view>
+      <view  class="size">
+        <view class="size-item" wx:for="{{item.size}}" wx:key="{{index}}">{{item}}</view>
+      </view>
+
+      <view class="number">
+        <view class="sizetitle">数量</view>
+        <view class="num">
+          <view><button bindtap="clickDown" data-price="{{item.price}}">-</button></view>
+          <view class="input"><input value="{{count}}"></input></view>
+          <view><button bindtap="clickUp" data-price="{{item.price}}">+</button></view>
+        </view>
+        <view></view>
+      </view>
+
+      <button class="btn">确定</button>
+  </view>  
+<view class="mask" wx:if="{{show}}"></view>
+<van-goods-action>
+    <van-goods-action-icon
+      icon="shop-o"
+      text="首页"
+      bind:click="gotoHome"
+    />
+
+    <van-goods-action-icon
+      icon="chat-o"
+      text="客服"
+    />
+    <van-goods-action-icon
+      icon="cart-o"
+      text="购物车"
+    />
+    <van-goods-action-button
+      text="加入购物车"
+      type="warning"
+      bindtap="goCar"
+    />
+    <van-goods-action-button
+      text="立即购买"
+      bindtap="goShop"
+    />
+  </van-goods-action>

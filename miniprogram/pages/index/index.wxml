@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<!---轮播图--->
+<swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+<!--  宫格  -->
+<view class='grid-item-container'>
+  <block>
+    <navigator url="{{item.url}}" class='grid-item-child' bindtap="goto" wx:for="{{iconStyle}}" wx:key="*this">
+      
+        <image class='grid-item-icon' src="{{item.image}}"></image>
+        <text class='grid-item-label'>{{item.type}}</text>
+     
+    </navigator>
+  </block>
+</view>
+

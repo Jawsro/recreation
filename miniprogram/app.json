@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/cakeitem/cakeitem",
+    "pages/index/index",
+    "pages/me/me",
+    "pages/cake/cake",
+    "pages/itemize/itemize",
+    "pages/shopcar/shopcar",
+    "pages/cakelist/cakelist",
+    "pages/comment/comment"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#31b7f1",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "color": "#bfbfbf",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home1.png"
+      },
+      {
+        "pagePath": "pages/itemize/itemize",
+        "text": "电影",
+        "iconPath": "images/movie.png",
+        "selectedIconPath": "images/movie1.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我",
+        "iconPath": "images/me.png",
+        "selectedIconPath": "images/me1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap47.json"
+}

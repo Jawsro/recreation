@@ -1,0 +1,26 @@
+/* pages/me/me.wxss */
+.me{
+  height: 400rpx;
+  width: 100%;
+  background:#f4ea2a;
+  text-align: center;
+  position: relative;
+}
+.user{
+  display: block;
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -100rpx;
+  transform: translate(-50%，100rpx)
+}
+.suer-name{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 230rpx);
+  color: #fff;
+  font-size: 32rpx;
+}

@@ -1,0 +1,50 @@
+<!--pages/cake/cake.wxml  蛋糕-->
+<!---轮播图--->
+<swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 主题 专区-->
+    <!--儿童   --->
+  <view class="title" bindtap="onAdd">
+    <text class="bigtext">儿童</text>
+    <text class="smalltetx">/专区</text>
+    <navigator class="more" url="../cakelist/cakelist">更多</navigator>
+  </view>
+  <view class="con">
+    <view class="main" wx:for="{{childcake}}" wx:key="item._id" bindtap="gotoCakeitem" data-name="{{item.name}}">
+      <image class="image" src="{{item.image}}"></image>
+      <view class="name">{{item.name}}</view>
+      <view class="content">{{item.content}}</view>
+    </view>
+ </view>
+   <!--聚会   --->
+ <view class="title" bindtap="onAdd">
+    <text class="bigtext">聚会</text>
+    <text class="smalltetx">/专区</text>
+    <navigator class="more" url="../cakelist/cakelist">更多</navigator>
+  </view>
+  <view class="con">
+    <view class="main" wx:for="{{partycake}}" wx:key="item._id">
+      <image class="image" src="{{item.image}}"></image>
+      <view class="name">{{item.name}}</view>
+      <view class="content">{{item.content}}</view>
+    </view>
+ </view>
+  <!--小食   --->
+ <view class="title" bindtap="onAdd">
+    <text class="bigtext">小食</text>
+    <text class="smalltetx">/专区</text>
+    <navigator class="more" url="../cakelist/cakelist">更多</navigator>
+  </view>
+  <view class="con">
+    <view class="main" wx:for="{{snackscake}}" wx:key="item._id">
+      <image class="image" src="{{item.image}}"></image>
+      <view class="name">{{item.name}}</view>
+      <view class="content">{{item.content}}</view>
+    </view>
+ </view>
